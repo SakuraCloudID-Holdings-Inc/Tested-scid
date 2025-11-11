@@ -1,0 +1,138 @@
+{
+  "job_postings": [
+    {
+      "job_title": "Lead Cloud Security Architect",
+      "job_requisition_id": "REQ-2301",
+      "work_type": "Full-time",
+      "team": "SakuraCloudID Platform",
+      "category": "Engineering",
+      "location": "Tokyo, Japan",
+      "posting_date": "2025-02-15",
+      "description": "Define secure multi-cloud architectures, partnering with AI/ML teams to safeguard our identity fabric.",
+      "qualifications": "10+ years cloud security,Zero-trust frameworks,Leadership experience,Japanese/English fluency"
+    },
+    {
+      "job_title": "Senior Site Reliability Engineer",
+      "job_requisition_id": "REQ-2302",
+      "work_type": "Full-time",
+      "team": "Operations Engineering",
+      "category": "Engineering",
+      "location": "Singapore",
+      "posting_date": "2025-03-02",
+      "description": "Automate observability and resilience for a distributed edge network spanning 40+ global POPs.",
+      "qualifications": "Kubernetes expertise,Distributed systems,Go or Rust,Pager-duty leadership"
+    },
+    {
+      "job_title": "Director of Portfolio Marketing",
+      "job_requisition_id": "REQ-2303",
+      "work_type": "Hybrid",
+      "team": "Brand & Growth",
+      "category": "Marketing",
+      "location": "Seattle, USA",
+      "posting_date": "2025-01-28",
+      "description": "Shape global narratives for our subsidiaries and launch next-gen identity intelligence campaigns.",
+      "qualifications": "SaaS marketing,ABM strategy,Executive stakeholder management,Storytelling"
+    },
+    {
+      "job_title": "AI Trust & Safety Analyst",
+      "job_requisition_id": "REQ-2304",
+      "work_type": "Contract",
+      "team": "Ethical AI Council",
+      "category": "Operations",
+      "location": "Remote - Global",
+      "posting_date": "2025-03-12",
+      "description": "Evaluate AI-driven identity insights, balancing innovation with regulatory and ethical guardrails.",
+      "qualifications": "Policy analysis,Model evaluation,Risk mitigation,Compliance"
+    },
+    {
+      "job_title": "Talent Acquisition Partner - Technology",
+      "job_requisition_id": "REQ-2305",
+      "work_type": "Full-time",
+      "team": "People & Culture",
+      "category": "Human Resources",
+      "location": "Berlin, Germany",
+      "posting_date": "2025-02-01",
+      "description": "Build pipelines for world-class engineers and data scientists across our innovation studios.",
+      "qualifications": "Technical recruiting,Stakeholder alignment,Data-driven sourcing,ATS mastery"
+    }
+  ],
+  "candidates": [
+    {
+      "name": "Emi Takahashi",
+      "email": "emi.takahashi@sakuracloudidtalent.com",
+      "skills": ["Zero Trust", "Kubernetes", "Python", "Cloud Security"],
+      "experience": "12 years in cloud and identity security",
+      "experience_years": 12,
+      "education": "MSc Information Security, University of Tokyo",
+      "location": "Tokyo",
+      "summary": "Architected zero-trust frameworks for 3 Fortune 100 enterprises, leading cross-region red team programs.",
+      "availability": "Open to relocation"
+    },
+    {
+      "name": "Luis Martínez",
+      "email": "luis.martinez@sakuracloudidtalent.com",
+      "skills": ["SRE", "Go", "Terraform", "Chaos Engineering"],
+      "experience": "7 years scaling distributed systems",
+      "experience_years": 7,
+      "education": "BSc Computer Science, Universidad de los Andes",
+      "location": "Madrid",
+      "summary": "Implemented self-healing platform automations achieving 99.99% uptime across 1200+ microservices.",
+      "availability": "Open to hybrid"
+    },
+    {
+      "name": "Aisha Rahman",
+      "email": "aisha.rahman@sakuracloudidtalent.com",
+      "skills": ["Product Marketing", "ABM", "Analytics", "Storytelling"],
+      "experience": "9 years in enterprise SaaS marketing",
+      "experience_years": 9,
+      "education": "MBA, INSEAD",
+      "location": "Singapore",
+      "summary": "Launched three identity intelligence platforms, boosting ARR by 45% through data-informed narratives.",
+      "availability": "Open to remote"
+    },
+    {
+      "name": "Noah Stein",
+      "email": "noah.stein@sakuracloudidtalent.com",
+      "skills": ["AI Ethics", "Risk", "NLP", "Compliance"],
+      "experience": "6 years in AI governance",
+      "experience_years": 6,
+      "education": "LLM Technology Law, Humboldt University",
+      "location": "Berlin",
+      "summary": "Designed AI policy frameworks aligning EU AI Act requirements with agile research experimentation.",
+      "availability": "Contract preferred"
+    },
+    {
+      "name": "Hana Kobayashi",
+      "email": "hana.kobayashi@sakuracloudidtalent.com",
+      "skills": ["Technical Recruiting", "ATS", "Stakeholder Management", "Analytics"],
+      "experience": "8 years in global talent acquisition",
+      "experience_years": 8,
+      "education": "BA International Business, Waseda University",
+      "location": "Tokyo",
+      "summary": "Scaled engineering hiring from 200 to 800 employees in 18 months with inclusive hiring playbooks.",
+      "availability": "Open to full-time"
+    }
+  ],
+  "applications": {},
+  "users": [
+    {
+      "username": "recruiter@sakuracloudid.com",
+      "password": "Recruiter123",
+      "role": "recruiter"
+    },
+    {
+      "username": "candidate@sakuracloudid.com",
+      "password": "Candidate123",
+      "role": "candidate",
+      "profile": {
+        "name": "Demo Candidate",
+        "skills": ["Cloud Security", "DevSecOps"],
+        "experience": "5 years securing distributed systems",
+        "experience_years": 5,
+        "education": "BSc Computer Science",
+        "location": "Tokyo",
+        "availability": "Open to hybrid"
+      }
+    }
+  ]
+}

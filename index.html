@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SakuraCloudID Holdings careers portal for discovering roles and talent across engineering, operations, and more." />
+  <meta name="keywords" content="SakuraCloudID jobs, SakuraCloudID careers, cloud recruitment, technology jobs" />
+  <meta name="author" content="SakuraCloudID Holdings" />
+  <title>SakuraCloudID Careers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SakuraCloudID Holdings",
+    "url": "https://careers.sakuracloudid.com",
+    "logo": "https://careers.sakuracloudid.com/assets/logo.svg",
+    "sameAs": [
+      "https://www.linkedin.com/company/sakuracloudid",
+      "https://twitter.com/sakuracloudid"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="SakuraCloudID" class="brand__mark" />
+      <div>
+        <span class="brand__name">SakuraCloudID Holdings</span>
+        <span class="brand__tagline">Careers &amp; Talent Network</span>
+      </div>
+    </div>
+    <nav class="topbar__nav">
+      <a href="#jobs">Jobs</a>
+      <a href="#candidates">Talent</a>
+      <a href="#about">About</a>
+      <button id="dashboardToggle" class="btn btn--ghost" type="button">Dashboard</button>
+      <button id="authToggle" class="btn" type="button">Sign In</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="hero__content">
+        <h1>Build the future of intelligent cloud experiences</h1>
+        <p>
+          Join SakuraCloudID Holdings and our portfolio of innovators as we reimagine secure identity, AI-driven operations, and
+          resilient digital infrastructure. Explore openings across the globe or discover extraordinary candidates ready to lead
+          change.
+        </p>
+        <div class="search-group">
+          <div class="search-group__field">
+            <label for="jobSearch">Search jobs</label>
+            <input id="jobSearch" type="search" placeholder="Search by title, skills, or keywords" />
+          </div>
+          <div class="search-group__field">
+            <label for="candidateSearch">Search talent</label>
+            <input id="candidateSearch" type="search" placeholder="Search by skills, experience, or location" />
+          </div>
+        </div>
+      </div>
+      <div class="hero__image" aria-hidden="true">
+        <div class="hero__glow"></div>
+      </div>
+    </section>
+
+    <section class="panel" id="jobs">
+      <header class="panel__header">
+        <div>
+          <h2>Explore open roles</h2>
+          <p>Filter by team, work style, or posting date to find your next chapter.</p>
+        </div>
+        <div class="panel__filters">
+          <select id="jobTeamFilter" aria-label="Filter by team">
+            <option value="">All teams</option>
+          </select>
+          <select id="jobCategoryFilter" aria-label="Filter by category">
+            <option value="">All categories</option>
+          </select>
+          <select id="jobTypeFilter" aria-label="Filter by work type">
+            <option value="">All work types</option>
+          </select>
+          <select id="jobDateFilter" aria-label="Filter by posting date">
+            <option value="">Any time</option>
+            <option value="7">Past 7 days</option>
+            <option value="30">Past 30 days</option>
+            <option value="90">Past 90 days</option>
+          </select>
+        </div>
+      </header>
+      <div id="jobResults" class="card-grid" role="list"></div>
+    </section>
+
+    <section class="panel panel--alt" id="candidates">
+      <header class="panel__header">
+        <div>
+          <h2>Discover standout candidates</h2>
+          <p>Use adaptive filters to source talent with the right blend of skills and experience.</p>
+        </div>
+        <div class="panel__filters">
+          <select id="candidateSkillFilter" aria-label="Filter by skill">
+            <option value="">All skills</option>
+          </select>
+          <select id="candidateLocationFilter" aria-label="Filter by location">
+            <option value="">All locations</option>
+          </select>
+          <select id="candidateExperienceFilter" aria-label="Filter by experience">
+            <option value="">Any experience</option>
+            <option value="0-2">0-2 years</option>
+            <option value="3-5">3-5 years</option>
+            <option value="6-9">6-9 years</option>
+            <option value="10+">10+ years</option>
+          </select>
+        </div>
+      </header>
+      <div id="candidateResults" class="card-grid" role="list"></div>
+    </section>
+
+    <section class="panel" id="insights">
+      <header class="panel__header">
+        <div>
+          <h2>Life at SakuraCloudID</h2>
+          <p>We blend the craft of design, data, and human-centered thinking to create resilient cloud experiences.</p>
+        </div>
+      </header>
+      <div class="insights">
+        <article>
+          <h3>Hybrid-first flexibility</h3>
+          <p>Choose where you work best with hubs in Tokyo, Singapore, Seattle, and Berlin plus remote opportunities across 27 markets.</p>
+        </article>
+        <article>
+          <h3>Invested in growth</h3>
+          <p>Access continuous learning stipends, cross-functional guilds, and a mentorship network spanning our portfolio companies.</p>
+        </article>
+        <article>
+          <h3>Impact at scale</h3>
+          <p>Ship products that secure the identities of over 400 million users while embracing sustainability and community impact.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="dashboard" id="dashboard" hidden>
+      <header class="dashboard__header">
+        <h2>Recruitment cockpit</h2>
+        <button id="logoutBtn" class="btn btn--ghost" type="button">Log out</button>
+      </header>
+      <div class="dashboard__content">
+        <div class="dashboard__panel" id="recruiterPanel" hidden>
+          <h3>Manage job postings</h3>
+          <form id="newJobForm" class="form">
+            <div class="form__row">
+              <label>Job title
+                <input name="job_title" required />
+              </label>
+              <label>Requisition ID
+                <input name="job_requisition_id" required />
+              </label>
+            </div>
+            <div class="form__row">
+              <label>Work type
+                <select name="work_type" required>
+                  <option value="Full-time">Full-time</option>
+                  <option value="Part-time">Part-time</option>
+                  <option value="Contract">Contract</option>
+                  <option value="Internship">Internship</option>
+                </select>
+              </label>
+              <label>Team/Department
+                <input name="team" required />
+              </label>
+              <label>Category
+                <input name="category" required />
+              </label>
+            </div>
+            <div class="form__row">
+              <label>Location
+                <input name="location" placeholder="Tokyo, Remote, etc." />
+              </label>
+              <label>Posting date
+                <input name="posting_date" type="date" required />
+              </label>
+            </div>
+            <label>Description
+              <textarea name="description" rows="3" required></textarea>
+            </label>
+            <label>Qualifications
+              <textarea name="qualifications" rows="3" required></textarea>
+            </label>
+            <button class="btn" type="submit">Publish role</button>
+          </form>
+          <div class="dashboard__list">
+            <h4>Live postings</h4>
+            <ul id="dashboardJobs" class="list"></ul>
+          </div>
+        </div>
+        <div class="dashboard__panel" id="applicationsPanel" hidden>
+          <h3>Applications</h3>
+          <div id="applicationsList" class="list list--stack"></div>
+        </div>
+        <div class="dashboard__panel" id="candidatePanel" hidden>
+          <h3>Your candidate profile</h3>
+          <form id="candidateProfileForm" class="form">
+            <label>Full name
+              <input name="name" required />
+            </label>
+            <label>Primary skills (comma separated)
+              <input name="skills" placeholder="AI, Cybersecurity, Cloud" required />
+            </label>
+            <label>Experience summary
+              <input name="experience" placeholder="8 years in cloud security" required />
+            </label>
+            <label>Years of experience
+              <input name="experience_years" type="number" min="0" max="50" step="0.5" required />
+            </label>
+            <label>Education
+              <input name="education" placeholder="MSc Computer Science" required />
+            </label>
+            <label>Location
+              <input name="location" placeholder="Tokyo" required />
+            </label>
+            <label>Availability
+              <select name="availability">
+                <option value="Open to full-time">Open to full-time</option>
+                <option value="Open to hybrid">Open to hybrid</option>
+                <option value="Open to remote">Open to remote</option>
+                <option value="Contract preferred">Contract preferred</option>
+              </select>
+            </label>
+            <label>Resume (PDF)
+              <input name="resume" type="file" accept="application/pdf" />
+            </label>
+            <label>Cover letter (PDF)
+              <input name="cover_letter" type="file" accept="application/pdf" />
+            </label>
+            <button class="btn" type="submit">Save profile</button>
+          </form>
+          <div class="dashboard__list">
+            <h4>Submitted applications</h4>
+            <ul id="candidateApplications" class="list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>SakuraCloudID Holdings</strong>
+      <p>Empowering secure cloud-native ecosystems for millions of users.</p>
+    </div>
+    <div class="footer__links">
+      <a href="#jobs">Open roles</a>
+      <a href="#candidates">Talent network</a>
+      <a href="#about">About us</a>
+      <a href="mailto:talent@sakuracloudid.com">talent@sakuracloudid.com</a>
+    </div>
+  </footer>
+
+  <dialog id="authDialog" class="modal">
+    <form id="authForm" method="dialog" class="modal__content">
+      <header class="modal__header">
+        <h3>Sign in to continue</h3>
+        <button type="button" class="modal__close" data-close>×</button>
+      </header>
+      <fieldset>
+        <legend>Choose your portal</legend>
+        <label class="radio">
+          <input type="radio" name="role" value="recruiter" checked /> Recruiter
+        </label>
+        <label class="radio">
+          <input type="radio" name="role" value="candidate" /> Candidate
+        </label>
+      </fieldset>
+      <label>Email
+        <input name="username" type="email" required placeholder="you@sakuracloudid.com" />
+      </label>
+      <label>Password
+        <input name="password" type="password" required placeholder="••••••••" />
+      </label>
+      <button class="btn" type="submit">Sign in</button>
+      <p class="modal__hint">Demo recruiter: recruiter@sakuracloudid.com / Recruiter123<br />Demo candidate: candidate@sakuracloudid.com / Candidate123</p>
+    </form>
+  </dialog>
+
+  <dialog id="applyDialog" class="modal">
+    <form id="applyForm" method="dialog" class="modal__content">
+      <header class="modal__header">
+        <h3 id="applyJobTitle">Apply for this role</h3>
+        <button type="button" class="modal__close" data-close>×</button>
+      </header>
+      <input type="hidden" name="job_requisition_id" />
+      <label>Full name
+        <input name="name" required />
+      </label>
+      <label>Email
+        <input name="email" type="email" required />
+      </label>
+      <label>Resume (PDF)
+        <input name="resume" type="file" accept="application/pdf" required />
+      </label>
+      <label>Cover letter (PDF)
+        <input name="cover_letter" type="file" accept="application/pdf" />
+      </label>
+      <label>Message to hiring team
+        <textarea name="message" rows="3" placeholder="Share your motivation"></textarea>
+      </label>
+      <button class="btn" type="submit">Submit application</button>
+    </form>
+  </dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
